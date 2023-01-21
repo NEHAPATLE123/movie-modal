@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ed23c9a033.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title> Movie Modal-1 </title>
+    
+</head>
+<body>
+    <header class="bg-primary text-white p-4 mb-4">
+        <div class="row">
+            <div class="col-sm-9">  
+                <h1> Movie Gallary </h1>
+            </div>
+            <div class="col-sm-3 text-right">
+                <button class="btn btn-warning" id="showModal"> Add Movie </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row" id="movieContainer">
+            <!-- <div class="col-sm-4">
+                <div class="card mymovie">
+                    <div class="card-header text-center"> Ved </div>
+                    <div class="card-body">
+                        <figure>
+                            <img class="img" src="https://tse2.mm.bing.net/th?id=OIP.zZcI7PNkQyZNLsB5vSucJwHaEK&pid=Api&P=0" alt="ved movie" title="img">
+                        </figure>
+                    </div>
+                    <div class="card-footer text-right">
+                        5/5
+                    </div>
+                </div>
+            </div> -->
+            <!-- <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body"></div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header"></div>
+                    <div class="card-body"></div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+
+   <!-- position fixed element -->
+    <div class="backDrop" id="backDrop"></div>
+    <div class="myModal" id="myModal">
+        <h2 class="myModalHeading mb-3">
+            Add Movie modal
+            <a href="javascript:;" class="myClose">
+                <i class="fa-solid fa-xmark"></i>
+            </a>
+        </h2>
+        <div class="modalContent">
+            <div class="form-group">
+                <label for="title"> Title </label>
+                <input type="text" name="" id="title" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="imgUrl"> Image Url </label>
+                <input type="text" name="" id="imgUrl" class="form-control" >
+            </div>
+            <div class="form-group">
+                <lable for="rating"> Rating </lable>
+                <input type="text" name="" id="rating" class="form-control">
+            </div>
+            <div class="form-group text-right">
+                <button class="btn btn-primary btn-lg mr-3" id="addMovieBtn"> Add Movie </button>
+                <button class="btn btn-danger btn-lg myClose text-white"> Cancel </button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    
+   <script src="./assets/js/app.js"> </script> 
+</body>
+</html>
